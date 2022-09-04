@@ -99,3 +99,32 @@ function renderProgressBar() {
     progressBar.style.transform = `scaleX(${state.score / 10})`
 }
 
+document.querySelector(".btn1").addEventListener("click", () => {
+  document.body.classList.remove("twilight")
+  document.body.classList.remove("forest")
+  document.body.classList.remove("sunset")
+  document.body.classList.remove("goldenHues")
+  document.body.classList.toggle("pastel");
+});
+
+document.querySelector(".btn2").addEventListener("click", () => {
+  document.body.classList.remove("forest")
+  document.body.classList.remove("sunset")
+  document.body.classList.remove("goldenHues")
+  document.body.classList.toggle("twilight");
+});
+
+document.querySelector(".btn3").addEventListener("click", () => {
+  document.body.classList.remove("sunset")
+  document.body.classList.remove("goldenHues")
+  document.body.classList.toggle("forest");
+});
+
+document.querySelector(".btn4").addEventListener("click", () => {
+  document.body.classList.remove("goldenHues")
+  document.body.classList.toggle("sunset");
+});
+
+document.querySelector(".btn5").addEventListener("click", () => {
+  document.body.classList.toggle("goldenHues");
+});
